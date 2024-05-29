@@ -1,0 +1,2 @@
+git push origin master => 깃허브에 올리기
+git add . => 깃에 전부 넣기
