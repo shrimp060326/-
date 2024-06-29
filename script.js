@@ -12,12 +12,12 @@ const button = document.getElementById('button');
 var answer = []
 
 function click_box(id) {
-    if(document.getElementById(id).style.border == "4px solid red") {
-        document.getElementById(id).style.border = "0px solid red";
+    if(answer.includes(id)) {
+        document.getElementById(id).style.border = "0px solid #568EFA";
         answer.splice(answer.indexOf(id),1);
     }
     else {
-        document.getElementById(id).style.border = "4px solid red";
+        document.getElementById(id).style.border = "4px solid #568EFA";
         answer.push(id);
     }
     console.log(answer);
@@ -35,7 +35,31 @@ function change_page()  {
     else {
         document.getElementById('top_blue_box').style.backgroundColor = "#F17474";
         document.getElementById('button').style.backgroundColor = "#F17474";
+        box1.style.border = "0px solid #F17474"
+        box2.style.border = "0px solid #F17474"
+        box3.style.border = "0px solid #F17474"
+        box4.style.border = "0px solid #F17474"
+        box5.style.border = "0px solid #F17474"
+        box6.style.border = "0px solid #F17474"
+        box7.style.border = "0px solid #F17474"
+        box8.style.border = "0px solid #F17474"
+        box9.style.border = "0px solid #F17474"
+        answer = []
     }
   }
 
+
+
+  function complete_input()  {
+    var input_value = document.getElementById('input_form').value;
+    if(input_value == "종촌고 화이팅") {
+        location.href = "presentation1.html"
+    }
+    else {
+        document.getElementById('first_box2').style.backgroundColor = "#ECE0E0";
+        document.getElementById('first_box2').style.border = "0.6944vw #F17474 solid";
+        document.getElementById('text2').textContent = '틀렸습니다!';
+        document.getElementById('text2').style.color = '#F17474';
+    }
+  }
 

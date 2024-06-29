@@ -1,0 +1,53 @@
+.first_box {
+    width: 59.0278vw;
+    height: 45.8984vh; 
+    left: 20.4861vw; 
+    top: 27.0508vh; 
+    position: absolute; 
+    background: #D9D9D9; 
+    box-shadow: 2.0833vw 3.9063vh 20px 0.6944vw rgba(0, 0, 0, 0.20); 
+    border-radius: 1.3889vw; 
+    border: 0.6944vw #F2F2F2 solid;
+}
+
+.gray_box {
+    width: 52.5000vw;  
+    height: 19.6289vh;  
+    left: 3.2639vw;  
+    top: 3.3203vh;  
+    position: absolute; 
+    background: #AFAFAF; 
+    border-radius: 20px;
+    text-align: center;
+    display : flex;
+	justify-content : center;
+	align-items : center;
+    font-size: 2.3889vw;
+}
+
+.text {
+    left: 5.2083vw;
+    top: 25.1953vh;  
+    position: absolute; 
+    color: black; 
+    font-size: 1.3889vw;  
+    font-family: AppleSDGothicNeoSB00; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+.white_box {
+    width: 52.5000vw; 
+    height: 13.1836vh;  
+    left: 3.2639vw; 
+    top: 28.6133vh; 
+    position: absolute; 
+    background: #F2F2F2; 
+    box-shadow: 0px 2px 1.3889vw rgba(217, 217, 217, 0.71) inset; 
+    border-radius: 1.3889vw;
+    text-align: center;
+    display : flex;
+	justify-content : center;
+	align-items : center;
+    font-size: 2.3889vw;
+}

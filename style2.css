@@ -46,6 +46,7 @@
     background-repeat: no-reapeat;
     background-position: 0px 0px;
     background-size : cover;
+    border: 0px solid #568EFA;
 }
 .box1 {
     top : 14.0625vh;
