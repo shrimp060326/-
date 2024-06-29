@@ -9,11 +9,33 @@ const box8 = document.getElementById('box8');
 const box9 = document.getElementById('box9');
 const button = document.getElementById('button');
 
+var answer = []
+
 function click_box(id) {
-    document.getElementById(id).style.backgroundColor = "red";
+    if(document.getElementById(id).style.border == "4px solid red") {
+        document.getElementById(id).style.border = "0px solid red";
+        answer.splice(answer.indexOf(id),1);
+    }
+    else {
+        document.getElementById(id).style.border = "4px solid red";
+        answer.push(id);
+    }
+    console.log(answer);
+
 }
 
 function change_page()  {
-    location.href = "page2.html"
+    location.href = "game_stage_1.html"
   }
+
+  function check_answer()  {
+    if(answer.includes("box1") && answer.includes("box2") && answer.includes("box3") && answer.includes("box4") && !answer.includes("box5") && !answer.includes("box6") && !answer.includes("box7") && !answer.includes("box8") && !answer.includes("box9")) {
+        location.href = "game_stage_2.html"
+    }
+    else {
+        document.getElementById('top_blue_box').style.backgroundColor = "#F17474";
+        document.getElementById('button').style.backgroundColor = "#F17474";
+    }
+  }
+
 
