@@ -63,3 +63,18 @@ function change_page()  {
     }
   }
 
+  function getCheckboxValue() {
+    setTimeout(function() {
+        document.getElementById('check_box').remove();
+      }, 500);
+      setTimeout(function() {
+        document.getElementById('loading').style.border = "10px solid #ABABAB"; 
+        document.getElementById('loading').style.borderTop = "10px solid transparent";
+        document.getElementById('loading').style.width = "4.9444vw";
+        document.getElementById('loading').style.height = "4.9444vw ";
+      }, 500);
+      setTimeout(function() {
+        location.href = "CAPTCHA_game_start.html";
+      }, 3500);
+  }
+
