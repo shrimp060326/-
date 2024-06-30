@@ -45,7 +45,7 @@
     position: absolute;
     background-repeat: no-reapeat;
     background-position: 0px 0px;
-    background-size : cover;
+    background-size : 100% 100%;
     border: 0px solid #568EFA;
 }
 .box1 {
@@ -81,7 +81,7 @@
 .box7 {
     top : 51.1719vh;
     left : 0.6944vw;
-    background-image: url(7.jpeg);
+    background-image: url(7.webp);
 }
 .box8 {
     top : 51.1719vh;
