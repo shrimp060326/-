@@ -33,6 +33,10 @@ function change_page()  {
         location.href = "game_stage_2.html"
     }
     else {
+        setTimeout(function() {
+            document.getElementById('top_blue_box').style.backgroundColor = "#568EFA";
+            document.getElementById('button').style.backgroundColor = "#568EFA";
+          }, 1000);
         document.getElementById('top_blue_box').style.backgroundColor = "#F17474";
         document.getElementById('button').style.backgroundColor = "#F17474";
         box1.style.border = "0px solid #F17474"
@@ -61,7 +65,7 @@ function change_page()  {
             document.getElementById('first_box2').style.border = "0.6944vw #F2F2F2 solid";
             document.getElementById('text2').textContent = '위의 글자를 입력해주세요 :';
             document.getElementById('text2').style.color = 'black';    
-          }, 2000);
+          }, 1000);
         document.getElementById('first_box2').style.backgroundColor = "#ECE0E0";
         document.getElementById('first_box2').style.border = "0.6944vw #F17474 solid";
         document.getElementById('text2').textContent = '틀렸습니다!';
