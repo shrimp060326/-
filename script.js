@@ -56,7 +56,7 @@ function change_page()  {
 
   function complete_input()  {
     var input_value = document.getElementById('input_form').value;
-    if(input_value == "종촌고 화이팅") {
+    if(input_value == "CAPTCHA") {
         location.href = "presentation1.html"
     }
     else {
