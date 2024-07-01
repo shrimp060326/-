@@ -56,6 +56,12 @@ function change_page()  {
         location.href = "presentation1.html"
     }
     else {
+        setTimeout(function() {
+            document.getElementById('first_box2').style.backgroundColor = "#D9D9D9";
+            document.getElementById('first_box2').style.border = "0.6944vw #F2F2F2 solid";
+            document.getElementById('text2').textContent = '위의 글자를 입력해주세요 :';
+            document.getElementById('text2').style.color = 'black';    
+          }, 2000);
         document.getElementById('first_box2').style.backgroundColor = "#ECE0E0";
         document.getElementById('first_box2').style.border = "0.6944vw #F17474 solid";
         document.getElementById('text2').textContent = '틀렸습니다!';
